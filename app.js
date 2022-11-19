@@ -4,7 +4,7 @@ var mongoose = require('mongoose');
 var app = express();
 app.use(bodyParser.json());
 app.set('port', (process.env.PORT || 5000));
-mongoose.connect('mongodb+srv://dsd:muQK6O2NeRTtIpWU@cluster0.eboml.mongodb.net/test?retryWrites=true&w=majority', function (error) {
+mongoose.connect('<codigo_mongo>', function (error) {
  if (error) {
 console.log(error);
  }
